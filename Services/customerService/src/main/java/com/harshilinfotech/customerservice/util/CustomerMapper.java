@@ -3,19 +3,14 @@ package com.harshilinfotech.customerservice.util;
 import com.harshilinfotech.customerservice.dto.CustomerRequest;
 import com.harshilinfotech.customerservice.dto.CustomerResponse;
 import com.harshilinfotech.customerservice.entity.Customer;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Data
 @Builder
 @Component
-@NoArgsConstructor
-@AllArgsConstructor
 public class CustomerMapper {
-
 
     public Customer toCustomer(CustomerRequest request) {
 

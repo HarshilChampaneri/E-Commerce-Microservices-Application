@@ -1,0 +1,12 @@
+spring:
+  config:
+    import: configserver:http://localhost:8888
+  application:
+    name: productService
+
+logging:
+  level:
+    org.flywaydb: DEBUG
+    com.zaxxer.hikari: DEBUG
+    org.postgresql: TRACE
+    org.springframework.jdbc: DEBUG

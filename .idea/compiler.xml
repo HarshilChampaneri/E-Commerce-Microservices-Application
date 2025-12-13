@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,7 +10,7 @@
         <module name="discoveryService" />
         <module name="configServer" />
       </profile>
-      <profile name="Annotation profile for customerService" enabled="true">
+      <profile name="Annotation profile for productService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -17,6 +18,7 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="customerService" />
+        <module name="productService" />
       </profile>
     </annotationProcessing>
   </component>
@@ -25,6 +27,7 @@
       <module name="configServer" options="-parameters" />
       <module name="customerService" options="-parameters" />
       <module name="discoveryService" options="-parameters" />
+      <module name="productService" options="-parameters" />
     </option>
   </component>
 </project>
