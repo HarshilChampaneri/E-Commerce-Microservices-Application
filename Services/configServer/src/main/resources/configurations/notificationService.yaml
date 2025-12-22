@@ -1,0 +1,44 @@
+spring:
+
+  # MongoDB Database Configurations:
+  data:
+    mongodb:
+      username: user
+      password: pass
+      host: mongodb
+      port: 27017
+      database: customers
+      authentication-database: admin
+
+  # Kafka Configurations:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notificationGroup
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+        spring.json.type.mapping: orderConfirmation:com.harshilInfotech.orderService.dto.OrderConfirmation,paymentConfirmation:com.harshilInfotech.paymentService.dto.PaymentNotificationRequest
+
+  # Mail Configurations:
+  mail:
+    host: localhost
+    port: 1025
+    username: user
+    password: pass
+    properties:
+      mail:
+        smtp:
+          trust: "*"
+          auth: true
+          starttls:
+            enabled: true
+        connectiontimeout: 5000
+        timeout: 3000
+        writetimeout: 5000
+
+# Port Configurations:
+server:
+  port: 8030
