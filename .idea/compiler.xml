@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="discoveryService" />
         <module name="configServer" />
+        <module name="gateway" />
         <module name="orderService" />
       </profile>
       <profile name="Annotation profile for productService" enabled="true">
@@ -30,6 +31,7 @@
       <module name="configServer" options="-parameters" />
       <module name="customerService" options="-parameters" />
       <module name="discoveryService" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="notificationService" options="-parameters" />
       <module name="orderService" options="-parameters" />
       <module name="paymentService" options="-parameters" />

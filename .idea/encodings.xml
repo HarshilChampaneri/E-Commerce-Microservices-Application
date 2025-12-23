@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/Services/configServer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Services/customerService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Services/discoveryService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Services/notificationService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Services/orderService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Services/paymentService/src/main/java" charset="UTF-8" />
